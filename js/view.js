@@ -3,6 +3,7 @@ export function renderPage(data, loadPage) {
     const page = document.querySelector('.page');
     switch (location.pathname) {
         case '/index.html':
+        case '/':
             localStorage.clear();
             page.innerHTML = `
                 <h1 class="visually-hidden">Star Wars</h1>
