@@ -1,0 +1,201 @@
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    background-color: $secondary;
+    opacity: 1;
+    visibility: visible;
+    transition: $normal ease-in-out;
+
+    &__loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: grid;
+        grid-template-columns: repeat(5, 75px);
+        transform: translate(-50%, -50%);
+    }
+
+    &__loader-item:nth-child(1) {
+        transform: translateX(-75px) rotateZ(0);
+    }
+    &__loader-item:nth-child(1) &__loader-icon {
+        animation: $slow traffic-1 infinite linear;
+    }
+
+    &__loader-item:nth-child(2) {
+        transform: translateX(-75px) rotateZ(0);
+    }
+    &__loader-item:nth-child(2) &__loader-icon {
+        animation: $slow traffic-2 infinite linear;
+    }
+
+    &__loader-item:nth-child(3) {
+        transform: translateX(-75px) rotateZ(0);
+    }
+    &__loader-item:nth-child(3) &__loader-icon {
+        animation: $slow traffic-3 infinite linear;
+    }
+
+    &__loader-item:nth-child(4) {
+        transform: translateX(-75px)  rotateZ(0);
+    }
+    &__loader-item:nth-child(4) &__loader-icon {
+        animation: $slow traffic-4 infinite linear;
+    }
+
+    &__loader-item:nth-child(5) {
+        transform: translateX(-75px) rotateZ(0);
+    }
+    &__loader-item:nth-child(5) &__loader-icon {
+        animation: $slow traffic-5 infinite linear;
+    }
+
+    &.done {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes traffic-1 {
+    0% {
+        --color-1: #aeecff;
+        --color-2: #00c3ff;
+    }
+    20% {
+        --color-1: #b9ffb7;
+        --color-2: #09ff00;
+    }
+    40% {
+        --color-1: #fff0b3;
+        --color-2: #fdcc0d;
+    }
+    60% {
+        --color-1: #ffb9ff;
+        --color-2: #fd0dfd;
+    }
+    80% {
+        --color-1: #ffb6b6;
+        --color-2: #fd0d0d;
+    }
+
+    100% {
+        --color-1: #aeecff;
+        --color-2: #00c3ff;
+    }
+}
+
+@keyframes traffic-2 {
+    0% {
+        --color-1: #b9ffb7;
+        --color-2: #09ff00;
+    }
+    20% {
+        --color-1: #fff0b3;
+        --color-2: #fdcc0d;
+    }
+    40% {
+        --color-1: #ffb9ff;
+        --color-2: #fd0dfd;
+    }
+    60% {
+        --color-1: #ffb6b6;
+        --color-2: #fd0d0d;
+    }
+    80% {
+        --color-1: #aeecff;
+        --color-2: #00c3ff;
+    }
+
+    100% {
+        --color-1: #b9ffb7;
+        --color-2: #09ff00;
+    }
+}
+
+@keyframes traffic-3 {
+    0% {
+        --color-1: #fff0b3;
+        --color-2: #fdcc0d;
+    }
+    20% {
+        --color-1: #ffb9ff;
+        --color-2: #fd0dfd;
+    }
+    40% {
+        --color-1: #ffb6b6;
+        --color-2: #fd0d0d;
+    }
+    60% {
+        --color-1: #aeecff;
+        --color-2: #00c3ff;
+    }
+    80% {
+        --color-1: #b9ffb7;
+        --color-2: #09ff00;
+    }
+
+    100% {
+        --color-1: #fff0b3;
+        --color-2: #fdcc0d;
+    }
+}
+
+@keyframes traffic-4 {
+    0% {
+        --color-1: #ffb9ff;
+        --color-2: #fd0dfd;
+    }
+    20% {
+        --color-1: #ffb6b6;
+        --color-2: #fd0d0d;
+    }
+    40% {
+        --color-1: #aeecff;
+        --color-2: #00c3ff;
+    }
+    60% {
+        --color-1: #b9ffb7;
+        --color-2: #09ff00;
+    }
+    80% {
+        --color-1: #fff0b3;
+        --color-2: #fdcc0d;
+    }
+
+    100% {
+        --color-1: #ffb9ff;
+        --color-2: #fd0dfd;
+    }
+}
+
+@keyframes traffic-5 {
+    0% {
+        --color-1: #ffb6b6;
+        --color-2: #fd0d0d;
+    }
+    20% {
+        --color-1: #aeecff;
+        --color-2: #00c3ff;
+    }
+    40% {
+        --color-1: #b9ffb7;
+        --color-2: #09ff00;
+    }
+    60% {
+        --color-1: #fff0b3;
+        --color-2: #fdcc0d;
+    }
+    80% {
+        --color-1: #ffb9ff;
+        --color-2: #fd0dfd;
+    }
+
+    100% {
+        --color-1: #ffb6b6;
+        --color-2: #fd0d0d;
+    }
+}
